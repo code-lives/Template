@@ -48,25 +48,19 @@ class Wxtemplate
      * 发送模版消息
      * @param $appid string 小程序appid
      * @param $template_id string 模版消息id
-     * @param $template array 数组
+     * @param $template array 发送内容
      * @param $accessToken string accesstoken
      * @param $path string 路径
      * @return bool|mixed
      */
-    public function send($appid, $template, $accessToken, $path = '')
+    public function send($template, $accessToken)
     {
-
-        $template['miniprogram']['appid'] = $appid;
-        if ($path) {
-            $template['miniprogram']['pagepath'] = $path;
-        }
 
         $result = json_decode($this->post($this->urlSend . $accessToken, json_encode($template)), true);
         if (isset($result['errcode']) && $result['errcode'] === 0) {
             return true;
         }
-
-        return $result;
+        return false;
     }
 
     /**
