@@ -1,6 +1,6 @@
 <?php
 
-namespace Template;
+namespace Applet\Template;
 
 class Wxtemplate
 {
@@ -9,6 +9,7 @@ class Wxtemplate
     protected $urlSend = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=';
 
     protected $urlToken = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=';
+
 
     public static function getInstance()
     {
