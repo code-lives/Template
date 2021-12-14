@@ -1,0 +1,17 @@
+{
+    "name": "code-lives/Wxtemplate",
+    "description": "公众号发送模版消息跳转小程序",
+    "type": "library",
+    "license": "MIT",
+    "version":"1.0",
+    "authors": [
+        {
+            "name": "lijie",
+            "email": "18734351007@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":{
+   	"psr-4":{"Template\\":"src"}
+    }
+}
