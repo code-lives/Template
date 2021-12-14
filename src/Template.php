@@ -2,7 +2,7 @@
 
 namespace Applet\Template;
 
-class Template
+class Wxtemplate
 {
     private static $instance = null;
 
