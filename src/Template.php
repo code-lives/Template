@@ -6,10 +6,6 @@ class Wxtemplate
 {
     private static $instance = null;
 
-    private $config;
-
-    protected $color = '#173177';
-
     protected $urlSend = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=';
 
     protected $urlToken = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=';
