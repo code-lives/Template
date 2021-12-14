@@ -12,6 +12,6 @@
     ],
     "minimum-stability": "stable",
     "autoload":{
-   	"psr-4":{"Template\\":"src"}
+   	"psr-4":{"Applet\Template\":"src"}
     }
 }
